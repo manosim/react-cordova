@@ -1,2 +1,2 @@
-# react-hybrid
-Cordova &amp; Phonegap hybrid apps made with React
+# react-cordova
+A [React](https://facebook.github.io/react/) project template for [Apache Cordova](http://cordova.apache.org/).

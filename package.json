@@ -1,0 +1,34 @@
+{
+  "name": "react-cordova",
+  "version": "0.0.1",
+  "description": "A React project template for Apache Cordova.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekonstantinidis/react-cordova.git"
+  },
+  "keywords": [
+    "react",
+    "cordova",
+    "apache",
+    "hybrid",
+    "modile",
+    "apps"
+  ],
+  "author": "Emmanouil Konstantinidis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ekonstantinidis/react-cordova/issues"
+  },
+  "homepage": "https://github.com/ekonstantinidis/react-cordova#readme",
+  "dependencies": {
+    "react": "=0.13.3"
+  },
+  "devDependencies": {
+    "browserify": "=10.2.6",
+    "gulp": "=3.9.0"
+  }
+}

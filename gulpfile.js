@@ -14,6 +14,11 @@ gulp.task('clean-build', function () {
     .pipe(clean());
 });
 
+gulp.task('copy', function() {
+  gulp.src('www/src/images/**')
+    .pipe(gulp.dest('www/build/images'));
+});
+
 gulp.task('less', function () {
   gulp.src('./www/src/less/style.less')
     .pipe(plumber())
@@ -46,5 +51,5 @@ gulp.task('serve', function () {
 	});
 });
 
-gulp.task('build', ['clean-build', 'less', 'build-js']);
+gulp.task('build', ['clean-build', 'copy', 'less', 'build-js']);
 gulp.task('dev', ['build', 'serve', 'watch']);

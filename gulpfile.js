@@ -17,7 +17,7 @@ gulp.task('copy', function() {
   gulp.src('www/src/images/**')
     .pipe(gulp.dest('www/build/images/'));
 
-    gulp.src('node_modules/ionic-sdk/release/fonts/**')
+    gulp.src('node_modules/font-awesome/fonts/**')
       .pipe(gulp.dest('www/build/fonts/'));
 });
 

@@ -7,7 +7,7 @@ var Home = React.createClass({
         <div className='bar bar-header bar-positive'>
           <button className="button">About</button>
           <h1 className='title'>bar-positive</h1>
-          <button className="button">Edit</button>
+          <button className="button button-icon ion-ionic" />
         </div>
       </div>
     );

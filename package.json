@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/ekonstantinidis/react-cordova#readme",
   "dependencies": {
+    "ionic-sdk": "=1.0.0",
     "react": "=0.13.3"
   },
   "devDependencies": {

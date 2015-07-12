@@ -3,7 +3,7 @@ var Router = require('react-router');
 
 var AboutPage = React.createClass({
   mixins: [
-    Router.Navigation,
+    Router.Navigation
   ],
 
   render: function () {

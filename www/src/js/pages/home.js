@@ -3,7 +3,7 @@ var Router = require('react-router');
 
 var Home = React.createClass({
   mixins: [
-    Router.Navigation,
+    Router.Navigation
   ],
 
   goAbout: function () {

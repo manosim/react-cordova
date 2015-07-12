@@ -13,11 +13,12 @@ var Home = React.createClass({
   render: function () {
     return (
       <div className='homepage'>
-        <div className='bar bar-header bar-positive'>
-          <button className="button" onClick={this.goAbout}>About</button>
-          <h1 className='title'>React Cordova</h1>
-          <button className="button button-icon ion-ionic" />
-        </div>
+        <header className="bar bar-nav">
+          <button className="btn btn-link btn-nav pull-left" onClick={this.goAbout}>
+            <i className="fa fa-thumbs-up"></i> About
+          </button>
+          <h1 className="title">React Cordova</h1>
+        </header>
       </div>
     );
   }

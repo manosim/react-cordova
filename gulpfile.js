@@ -1,12 +1,18 @@
 var gulp = require('gulp');
+var clean = require('gulp-clean');
 
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var babelify = require('babelify');
+
 var less = require('gulp-less');
 var plumber = require('gulp-plumber');
-
 var connect = require('gulp-connect');
+
+gulp.task('clean-build', function () {
+  return gulp.src('www/build/*', {read: false})
+    .pipe(clean());
+});
 
 gulp.task('less', function () {
   gulp.src('./www/src/less/style.less')
@@ -40,5 +46,5 @@ gulp.task('serve', function () {
 	});
 });
 
-gulp.task('build', ['less', 'build-js']);
-gulp.task('dev', ['serve', 'watch']);
+gulp.task('build', ['clean-build', 'less', 'build-js']);
+gulp.task('dev', ['build', 'serve', 'watch']);

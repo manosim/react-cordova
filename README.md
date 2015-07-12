@@ -31,6 +31,19 @@ If you only want to build the app use:
     npm run build
 
 
+### Plugins
+In order to install/remove the plugins there is a script in `scripts/plugins.bash`. Simply edit it to add the plugins you want to use.
+
+    # Removes plugins
+    bash scripts/plugins.bash remove
+
+    # Installs the plugins
+    bash scripts/plugins.bash install
+
+    # Removes and Re-Installs the plugins
+    bash scripts/plugins.bash
+
+
 ### Tests
 
     npm test

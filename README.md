@@ -10,7 +10,7 @@ A [React](https://facebook.github.io/react/) project template for [Apache Cordov
  - [Cordova](http://cordova.apache.org/)
  - [Gulp](http://gulpjs.com/)
  - [React Router](http://rackt.github.io/react-router/)
- - [Ionic](http://ionicframework.com/) (**Note:** Only CSS & Ionicons)
+ - [Rachet](http://goratchet.com/)
  - [LESS CSS](http://lesscss.org/)
  - [NPM](https://www.npmjs.com/)
 

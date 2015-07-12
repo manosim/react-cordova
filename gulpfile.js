@@ -39,4 +39,5 @@ gulp.task('serve', function () {
 	});
 });
 
+gulp.task('build', ['less', 'build-js']);
 gulp.task('dev', ['serve', 'watch']);

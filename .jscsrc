@@ -1,0 +1,38 @@
+{
+  "esprima": "esprima-fb",
+  "disallowMultipleVarDecl": "exceptUndefined",
+  "validateQuoteMarks": {
+    "mark": "'",
+    "escape": false
+  },
+  "validateParameterSeparator": ", ",
+  "validateIndentation": 2,
+  "requireSpacesInFunction": {
+  "beforeOpeningRoundBrace": true,
+  "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInConditionalExpression": {
+    "afterTest": true,
+    "beforeConsequent": true,
+    "afterConsequent": true,
+    "beforeAlternate": true
+  },
+  "disallowTrailingWhitespace": true,
+  "maximumLineLength": 100,
+  "requireCurlyBraces": true,
+  "disallowMixedSpacesAndTabs": true,
+  "requireSpaceBeforeBinaryOperators": true,
+  "safeContextKeyword": [
+    "self"
+  ],
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleLineStrings": true,
+  "disallowSpaceAfterObjectKeys": true,
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowTrailingComma": true,
+  "requireCommaBeforeLineBreak": true,
+  "requireSpaceBetweenArguments": true,
+  "requireSpaceBeforeBlockStatements": true,
+  "requireSpaceBeforeObjectValues": true,
+  "requireSpacesInForStatement": true
+}

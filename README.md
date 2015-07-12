@@ -12,6 +12,7 @@ A [React](https://facebook.github.io/react/) project template for [Apache Cordov
  - [React Router](http://rackt.github.io/react-router/)
  - [Rachet](http://goratchet.com/)
  - [LESS CSS](http://lesscss.org/)
+ - [Font Awesome](http://fontawesome.io/)
  - [NPM](https://www.npmjs.com/)
 
 

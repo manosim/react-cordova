@@ -9,10 +9,12 @@ var AboutPage = React.createClass({
   render: function () {
     return (
       <div className='about-page'>
-        <div className='bar bar-header bar-positive'>
-          <button className="button button-icon ion-chevron-left" onClick={this.goBack} />
-          <h1 className='title'>About the project</h1>
-        </div>
+        <header className="bar bar-nav">
+          <button className="btn btn-link btn-nav pull-left" onClick={this.goBack}>
+            <i className="fa fa-chevron-left"></i> Back
+          </button>
+          <h1 className="title">React Cordova</h1>
+        </header>
       </div>
     );
   }

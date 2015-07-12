@@ -15,7 +15,7 @@ var Home = React.createClass({
       <div className='homepage'>
         <header className="bar bar-nav">
           <button className="btn btn-link btn-nav pull-left" onClick={this.goAbout}>
-            <i className="fa fa-thumbs-up"></i> About
+            About
           </button>
           <h1 className="title">React Cordova</h1>
         </header>

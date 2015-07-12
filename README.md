@@ -4,6 +4,8 @@
 
 A [React](https://facebook.github.io/react/) project template for [Apache Cordova](http://cordova.apache.org/).
 
+![React Cordova](www/src/images/react-cordova.png)
+
 ### Prerequisites
 
  - [React](https://facebook.github.io/react/)

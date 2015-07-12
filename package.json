@@ -27,8 +27,7 @@
   },
   "homepage": "https://github.com/ekonstantinidis/react-cordova#readme",
   "dependencies": {
-    "font-awesome": "^4.3.0",
-    "ionic-sdk": "=1.0.0",
+    "font-awesome": "=4.3.0",
     "ratchet": "twbs/ratchet",
     "react": "=0.13.3",
     "react-router": "=0.13.3"

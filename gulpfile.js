@@ -12,7 +12,8 @@ gulp.task('less', function () {
   gulp.src('./www/src/less/style.less')
     .pipe(plumber())
     .pipe(less())
-    .pipe(gulp.dest('./www/build/css/'));
+    .pipe(gulp.dest('./www/build/css/'))
+    .pipe(connect.reload());
 });
 
 gulp.task('build-js', function() {

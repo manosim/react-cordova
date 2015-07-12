@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require('del');
 
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
@@ -9,17 +9,16 @@ var less = require('gulp-less');
 var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
 
-gulp.task('clean-build', function () {
-  return gulp.src('www/build/*', {read: false})
-    .pipe(clean());
+gulp.task('clean', function (cb) {
+  del(['www/build/*'], cb);
 });
 
 gulp.task('copy', function() {
   gulp.src('www/src/images/**')
-    .pipe(gulp.dest('www/build/images'));
+    .pipe(gulp.dest('www/build/images/'));
 
     gulp.src('node_modules/ionic-sdk/release/fonts/**')
-      .pipe(gulp.dest('www/build/fonts'));
+      .pipe(gulp.dest('www/build/fonts/'));
 });
 
 gulp.task('less', function () {
@@ -54,5 +53,5 @@ gulp.task('serve', function () {
 	});
 });
 
-gulp.task('build', ['clean-build', 'copy', 'less', 'build-js']);
+gulp.task('build', ['clean', 'copy', 'less', 'build-js']);
 gulp.task('dev', ['build', 'serve', 'watch']);

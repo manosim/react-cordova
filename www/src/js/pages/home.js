@@ -1,12 +1,14 @@
 var React = require('react');
 var Router = require('react-router');
+require('react-fastclick');
 
 var Home = React.createClass({
   mixins: [
     Router.Navigation
   ],
 
-  goAbout: function () {
+  goAbout: function (event) {
+    event.preventDefault();
     this.transitionTo('about');
   },
 

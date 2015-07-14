@@ -7,8 +7,7 @@ var AboutPage = React.createClass({
     Router.Navigation
   ],
 
-  goHome: function (event) {
-    event.preventDefault();
+  goHome: function () {
     this.transitionTo('home');
   },
 

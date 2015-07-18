@@ -9,8 +9,9 @@ function remove {
     echo "-------------------"
     echo ""
 
-    ionic plugin rm cordova-plugin-device  # "Device"
-    ionic plugin rm cordova-plugin-console  # "Console"
+    cordova plugin rm cordova-plugin-device  # "Device"
+    cordova plugin rm cordova-plugin-console  # "Console"
+    cordova plugin rm cordova-plugin-statusbar # "Status Bar"
 
 }
 
@@ -22,8 +23,9 @@ function install {
     echo "------------------"
     echo ""
 
-    ionic plugin add cordova-plugin-device # "Device"
-    ionic plugin add cordova-plugin-console # "Console"
+    cordova plugin add cordova-plugin-device # "Device"
+    cordova plugin add cordova-plugin-console # "Console"
+    cordova plugin add cordova-plugin-statusbar # "Status Bar"
 
 }
 

@@ -30,6 +30,7 @@
     "font-awesome": "=4.3.0",
     "ratchet": "twbs/ratchet",
     "react": "=0.13.3",
+    "react-fastclick": "=1.0.0",
     "react-router": "=0.13.3"
   },
   "devDependencies": {

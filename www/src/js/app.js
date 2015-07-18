@@ -1,6 +1,8 @@
 var React = require('react');
 var Router = require('react-router');
 
+require('react-fastclick');
+
 var Route = Router.Route;
 var NotFoundRoute = Router.NotFoundRoute;
 var DefaultRoute = Router.DefaultRoute;

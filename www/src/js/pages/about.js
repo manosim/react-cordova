@@ -6,11 +6,15 @@ var AboutPage = React.createClass({
     Router.Navigation
   ],
 
+  goHome: function () {
+    this.transitionTo('home');
+  },
+
   render: function () {
     return (
       <div className='about-page'>
         <header className="bar bar-nav">
-          <button className="btn btn-link btn-nav pull-left" onClick={this.goBack}>
+          <button className="btn btn-link btn-nav pull-left" onClick={this.goHome}>
             <i className="fa fa-chevron-left"></i> Back
           </button>
           <h1 className="title">React Cordova</h1>

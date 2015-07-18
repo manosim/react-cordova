@@ -1,6 +1,5 @@
 var React = require('react');
 var Router = require('react-router');
-require('react-fastclick');
 
 var AboutPage = React.createClass({
   mixins: [

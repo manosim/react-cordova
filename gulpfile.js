@@ -19,6 +19,9 @@ gulp.task('copy', function() {
 
     gulp.src('node_modules/font-awesome/fonts/**')
       .pipe(gulp.dest('www/build/fonts/'));
+
+    gulp.src('node_modules/ratchet/dist/fonts/**')
+      .pipe(gulp.dest('www/build/fonts/'));
 });
 
 gulp.task('less', function () {
@@ -48,6 +51,7 @@ gulp.task('watch', function() {
 gulp.task('serve', function () {
 	connect.server({
 		root: 'www',
+		host: '*',
 		port: 8000,
 		livereload: true
 	});

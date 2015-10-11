@@ -10,27 +10,27 @@ var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
 
 gulp.task('clean', function (cb) {
-  del(['www/build/*'], cb);
+  return del(['www/build/*'], cb);
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', ['clean'], function() {
   gulp.src('www/src/images/**')
     .pipe(gulp.dest('www/build/images/'));
 
-    gulp.src('node_modules/font-awesome/fonts/**')
+    return gulp.src('node_modules/font-awesome/fonts/**')
       .pipe(gulp.dest('www/build/fonts/'));
 });
 
-gulp.task('less', function () {
-  gulp.src('./www/src/less/style.less')
+gulp.task('less', ['copy'], function () {
+  return gulp.src('./www/src/less/style.less')
     .pipe(plumber())
     .pipe(less())
     .pipe(gulp.dest('./www/build/css/'))
     .pipe(connect.reload());
 });
 
-gulp.task('build-js', function() {
-  browserify('./www/src/js/app.js')
+gulp.task('build-js', ['less'], function() {
+  return browserify('./www/src/js/app.js')
     .transform(babelify)
     .bundle()
     .pipe(source('app.js'))
